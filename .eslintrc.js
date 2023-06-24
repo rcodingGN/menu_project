@@ -11,7 +11,9 @@ module.exports = {
     // '@vue/typescript/recommended'
   ],
   parserOptions: {
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
+    sourceType: 'module'
+
   },
   rules: {
     'prettier/prettier': 0,
@@ -28,7 +30,7 @@ module.exports = {
     }],
     'vue/singleline-html-element-content-newline': 0, // 单行元素换行符
     'vue/multiline-html-element-content-newline': 0, // 多行元素换行符
-    'vue/name-property-casing': [2, 'PascalCase'], // vue组件name强制使用驼峰命名
+    // 'vue/name-property-casing': [2, 'PascalCase'], // vue组件name强制使用驼峰命名
     'vue/html-closing-bracket-newline': 0, // 可以在便签右便签使用换行符
     'vue/no-side-effects-in-computed-properties': 0, // 允许计算属性中出现副作用
     'vue/no-use-v-if-with-v-for': 0, // 允许v-for 和 v-if 作用在同一元素上

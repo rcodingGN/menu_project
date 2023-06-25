@@ -53,6 +53,7 @@ service.interceptors.response.use(response => {
 //   return Promise.reject(error)
 // },
 //   第二种方法
+
 error => {
   /** *** 接收到异常响应的处理开始 *****/
   if (error && error.response) {
@@ -119,5 +120,18 @@ error => {
   return Promise.resolve(error.response)
 })
 // 4.导入文件
+
+// const http={
+//   fetch(params){
+//     return new Promise((resolve,reject)=>{
+//       service(params).then(res=>{
+//         resolve([undefined,res.data])
+//       }).catch(err=>{
+//         resolve([err,undefined])
+//       })
+//     })
+//   }
+// }
+// export default http
 export default service
 

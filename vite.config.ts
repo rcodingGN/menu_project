@@ -8,7 +8,9 @@ export default defineConfig({
   plugins: [uni()],
   resolve: {
     alias: {
-      '@': resolve('src'),
+      '@': resolve(__dirname, 'src'),
+      '@components': resolve(__dirname, './src/components'),
+      '@api': resolve(__dirname, './src/api')
     },
   }
 })

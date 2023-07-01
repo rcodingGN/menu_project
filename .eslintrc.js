@@ -11,14 +11,20 @@ module.exports = {
     // '@vue/typescript/recommended'
   ],
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
     sourceType: 'module'
 
   },
   rules: {
-    'prettier/prettier': 0,
+    // 'prettier/prettier': 0,
     '@typescript-eslint/no-explicit-any': 0,
     'vue/attributes-order': 2,
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: ['index']
+      }
+    ],
     'vue/html-self-closing': [2, { // 强制使用闭合标签
       'html': {
         'void': 'any',

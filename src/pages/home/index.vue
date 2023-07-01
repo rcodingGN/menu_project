@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue'
+import { reactive } from 'vue'
 import usearch from '@/components/usearch/usearch.vue'
 import introduce from '@/components/introduce/introduce.vue'
 import slideMenu from '@/components/slideMenu/slideMenu.vue'

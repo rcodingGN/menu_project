@@ -10,10 +10,8 @@
       <usearch class="usearch-style"></usearch>
     </view>
     <view class="content-style">
-      <slide-menu
-        :menu-list="menuList"
-        class="menu-style"
-      ></slide-menu>
+      <slide-menu></slide-menu>
+      <menu-card></menu-card>
     </view>
 
   </view>
@@ -24,42 +22,8 @@ import { reactive } from 'vue'
 import usearch from '@/components/usearch/usearch.vue'
 import introduce from '@/components/introduce/introduce.vue'
 import slideMenu from '@/components/slideMenu/slideMenu.vue'
+import menuCard from '@/pages/menuCard/menuCard.vue'
 
-
-const menuList = reactive([
-  {
-    index: 0,
-    name: '嗨猪大餐'
-  },
-  {
-    index: 1,
-    name: '猪吃肉肉'
-  },
-  {
-    index: 2,
-    name: '小猪爆炒'
-  },
-  {
-    index: 3,
-    name: '煲锅猪汤'
-  },
-  {
-    index: 4,
-    name: '甜宝猪咪'
-  },
-  {
-    index: 5,
-    name: '鲜灵菜猪'
-  },
-  {
-    index: 6,
-    name: '小猪独食'
-  },
-  {
-    index: 7,
-    name: '猪一锅出'
-  },
-])
 </script>
 
 <style lang="scss">
@@ -72,12 +36,12 @@ const menuList = reactive([
 
   .bgstyle {
     width: 100%;
-    height: 200 rpx;
+    height: 200rpx;
     z-index: 1;
   }
 
   .introduce-style {
-    margin: -140rpx 20 rpx 0 20 rpx;
+    margin: -140rpx 20rpx 0 20rpx;
     z-index: 99;
   }
 
@@ -87,26 +51,21 @@ const menuList = reactive([
 
     text {
       display: flex;
-      font-size: 34 rpx;
+      font-size: 34rpx;
       align-items: center;
-      border-bottom: 6 rpx solid red;
-      margin-left: 40 rpx;
+      border-bottom: 6rpx solid red;
+      margin-left: 40rpx;
     }
 
     .usearch-style {
       justify-content: end;
       margin-left: auto;
-      margin-right: 20 rpx;
+      margin-right: 20rpx;
     }
   }
-
-  .content-style {
+  .content-style{
+    width: 100%;
     display: flex;
-
-    .menu-style {
-      align-items: normal;
-    }
   }
-
 }
 </style>

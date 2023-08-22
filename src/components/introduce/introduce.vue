@@ -15,13 +15,13 @@
         src="@/assets/image/news.png"
         class="bottom-image"
       />
-      <text>新上紫菜蛋花汤，酸菜鱼，欢迎品尝~</text>
+      <text>新上红烧肉，酸菜鱼，欢迎品尝~</text>
     </view>
   </view>
 </template>
 
 <script lang="ts" setup>
-import { ref, reactive } from 'vue'
+
 
 </script>
 

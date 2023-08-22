@@ -5,35 +5,24 @@
       :key="item.index"
       class="menu-style"
       @click="getMenuName(item)"
-
     >
       {{ item.name }}
     </view>
   </view>
 </template>
 
-<script setup>
-import { ref, reactive, toRefs } from 'vue'
+<script lang="ts" setup>
+// import { ref, reactive, toRefs } from "vue";
+import getSlideMenuHook from './hook'
+const { menuList, getMenuName } = getSlideMenuHook()
 
-const props = defineProps({
-  menuList: {
-    type: Array,
-    default: () => []
-  }
-})
-const { menuList } = toRefs(props)
-
-const getMenuName = (item) => {
-  console.log(item, '看下我可以获取到item嘛')
-}
 </script>
 
 <style lang="scss" scoped>
 .container {
-  background: #c0c0c0;
+  background: #eeecec;
   width: 200rpx;
   height: calc(100vh);
-
   .menu-style {
     height: 100rpx;
     align-items: center;

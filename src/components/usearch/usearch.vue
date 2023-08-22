@@ -9,7 +9,7 @@
     </uni-search-bar>
     <button
       class="button-style"
-      @click="search"
+      @click="getSearch"
     >搜索
     </button>
   </view>

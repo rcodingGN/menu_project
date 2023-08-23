@@ -35,7 +35,7 @@ export default function getSlideMenuHook() {
         // }
       ])
     function getMenuList():void {
-        
+
     }
     function getMenuName(item: Object): void {
         console.log(item, "看下我可以获取到item嘛");

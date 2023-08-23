@@ -13,7 +13,7 @@
 
 <script lang="ts" setup>
 // import { ref, reactive, toRefs } from "vue";
-import getSlideMenuHook from './hook'
+import getSlideMenuHook from './slideMenuHook'
 const { menuList, getMenuName } = getSlideMenuHook()
 
 </script>

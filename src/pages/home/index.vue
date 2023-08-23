@@ -6,7 +6,7 @@
     />
     <introduce class="introduce-style"></introduce>
     <view class="middle-style">
-      <text>点菜</text>
+      <text>分类</text>
       <usearch class="usearch-style"></usearch>
     </view>
     <view class="content-style">
@@ -23,6 +23,7 @@ import usearch from '@/components/usearch/usearch.vue'
 import introduce from '@/components/introduce/introduce.vue'
 import slideMenu from '@/components/slideMenu/slideMenu.vue'
 import menuCard from '@/pages/menuCard/menuCard.vue'
+import menuLable from '@/components/menuLable/menuLable.vue'
 
 </script>
 

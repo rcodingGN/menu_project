@@ -1,30 +1,36 @@
 {
-    "easycom": {
-		"autoscan": true,
-		"custom": {
-			// uni-ui 规则如下配置
-			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
-		}
-	},
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
   "pages": [
-    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-    // {
-    //     "path": "pages/middle/main",
-    //     "style": {
-    //         "navigationStyle": "custom"
-    //     }
-    // },
-    // {
-    //     "path": "pages/index/index",
-    //     "style": {
-    //         "navigationBarTitleText": "uni-app",
-    //         "navigationStyle": "custom"
-    //     }
-    // },
     {
       "path": "pages/home/index",
       "style": {
         "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/menuDetail/menuDetail",
+      "style": {
+        "navigationBarTitleText": "详情页"
+      }
+    },
+    {
+      "path": "pages/menuType/menuType",
+      "style": {
+        "navigationBarTitleText": "添加",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/myMenu/myMenu",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "enablePullDownRefresh": true
       }
     }
   ],
@@ -33,5 +39,35 @@
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  // 配置tabbar导航栏
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#FB7299",
+    "color": "#444444",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        //        "iconPath": "static/tabbar/find.png",
+        //        "selectedIconPath": "static/tabbar/find-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/menuType/menuType",
+        //        "iconPath": "static/tabbar/cate.png",
+//                "selectedIconPath": "static/tabbar/cate-selected.png",
+        "text": "添加"
+      },
+      {
+        "pagePath": "pages/myMenu/myMenu",
+        //        "iconPath": "static/tabbar/my.png",
+        //        "selectedIconPath": "static/tabbar/my-selected.png",
+        "text": "我的"
+      }
+    ],
+    "backgroundColor": ""
   }
+
+
 }
+

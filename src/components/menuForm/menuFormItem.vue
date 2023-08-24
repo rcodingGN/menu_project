@@ -1,7 +1,7 @@
 <template>
-  <uni-form-item v-bind="$attrs">
+  <uni-forms-item v-bind="$attrs">
     <slot></slot>
-  </uni-form-item>
+  </uni-forms-item>
 </template>
 <script setup lang="ts">
 </script>

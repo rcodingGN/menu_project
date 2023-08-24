@@ -1,6 +1,6 @@
 {
   "name": "uni-preset-vue",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
@@ -57,6 +57,7 @@
     "axios": "^1.4.0",
     "babel-eslint": "^10.1.0",
     "sass": "^1.63.6",
+    "swiper": "^10.2.0",
     "vue": "^3.2.45",
     "vue-i18n": "^9.1.9"
   },

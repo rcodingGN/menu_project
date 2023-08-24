@@ -1,9 +1,21 @@
 <template>
   <view class="container">
+    <!-- 第二个版本做轮播图-->
+    <!--    <uni-swiper-dot-->
+    <!--      class="uni-swiper-dot-box"-->
+    <!--      :info="info"-->
+    <!--      :current="current"-->
+    <!--      mode="round"-->
+    <!--      :dots-styles="dotsStyles"-->
+    <!--      field="content"-->
+    <!--      @clickItem="clickItem">-->
+
+    <!--      <swiper></swiper>-->
+    <!--    </uni-swiper-dot>-->
     <view class="bgImg"></view>
     <uni-card
-        :is-full="true"
-        padding="0"
+      :is-full="true"
+      padding="0"
     >
       <template #title>
         <menu-lable :show="showSvg">狗狗大餐</menu-lable>
@@ -12,8 +24,8 @@
     </uni-card>
     <view style="background-color: #eeecec;height: 20rpx"></view>
     <uni-card
-        :is-full="true"
-        padding="0"
+      :is-full="true"
+      padding="0"
     >
       <template #title>
         <menu-lable></menu-lable>

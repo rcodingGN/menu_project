@@ -22,8 +22,8 @@ const props = defineProps({
   searchValue: String,
 })
 const { searchValue } = toRefs(props)
-const getSearch = (e) => {
-  console.log(e, '让我看看点中了谁')
+const getSearch = () => {
+  // console.log(e, '让我看看点中了谁')
 }
 </script>
 

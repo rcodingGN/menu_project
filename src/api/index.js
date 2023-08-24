@@ -1,5 +1,5 @@
-import home from './home'
+import HOME_API from './home'
 
 export {
-  home as HOME
+  HOME_API
 }

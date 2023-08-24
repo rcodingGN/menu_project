@@ -12,7 +12,8 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+    parse: 'babel-eslint'
   },
   rules: {
     // 'prettier/prettier': 0,
@@ -33,6 +34,7 @@ module.exports = {
       'svg': 'any',
       'math': 'any'
     }],
+    'vue/max-attributes-per-line': 0,
     'vue/singleline-html-element-content-newline': 0, // 单行元素换行符
     'vue/multiline-html-element-content-newline': 0, // 多行元素换行符
     // 'vue/name-property-casing': [2, 'PascalCase'], // vue组件name强制使用驼峰命名

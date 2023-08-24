@@ -1,9 +1,20 @@
-import request from '@/utils/request'
+import request from '@/utils/axios'
 
-export function getMenuList(params) {
-  return request({
-    url: ``,
-    method: 'POST',
-    params
-  })
+const HOME_API = {
+  getMenuTypeList: async(params) => {
+    return request({
+      url: ``,
+      method: 'POST',
+      params
+    })
+  },
+  getMenuList: (params) => {
+    return request({
+      url: ``,
+      method: 'POST',
+      params
+    })
+  }
 }
+export default HOME_API
+

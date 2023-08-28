@@ -32,6 +32,16 @@
 import menuForm from '@/components/menuForm/menuForm.vue'
 import menuFormItem from '@/components/menuForm/menuFormItem.vue'
 import getMenuTypeHook from '@/pages/menuType/menuTypeHook'
+import { HOME_API } from '@/api/index.js'
+
+async function getList() {
+  HOME_API.getMenuTypeList().then((res) => {
+    console.log(res, 'aaa')
+  }).catch(() => {})
+  // const [res, err] = await HOME_API.getMenuList()
+  // console.log(res, err, 'aaaa')
+}
+getList()
 
 const { menuFormsRef, typeList, formData, fileLists, handleConfirm, getSelectChange, useProgress, useSuccess, useFail, useSelect, useDelete } = getMenuTypeHook()
 </script>

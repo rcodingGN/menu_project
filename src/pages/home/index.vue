@@ -13,7 +13,6 @@
       <slide-menu></slide-menu>
       <menu-card></menu-card>
     </view>
-
   </view>
 </template>
 
@@ -23,7 +22,20 @@ import usearch from '@/components/usearch/usearch.vue'
 import introduce from '@/components/introduce/introduce.vue'
 import slideMenu from '@/components/slideMenu/slideMenu.vue'
 import menuCard from '@/pages/menuCard/menuCard.vue'
-import menuLable from '@/components/menuLable/menuLable.vue'
+import { HOME_API } from '@/api/index.js'
+
+// const getList = () => {
+//   HOME_API.getMenuTypeList().then((res) => {
+//     console.log(res, 'aaa')
+//   }).catch(() => {})
+const xhr = new XMLHttpRequest()
+xhr.open('GET', 'http://localhost:3001/api/menu/menuList', true)
+xhr.onreadystatechange = function() {
+  console.log(xhr.responseText, 'aaaa')
+}
+xhr.send()
+// }
+// getList()
 
 </script>
 
